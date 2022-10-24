@@ -1,0 +1,7 @@
+Hop-by-hop transport is a principle of controlling the flow of data in a network. With hop-by-hop transport, chunks of data are forwarded from node to node in a store-and-forward manner.
+
+As hop-by-hop transport involves not only the source and destination node, but rather some or all of the intermediate nodes as well, it allows data to be forwarded even if the path between source and destination is not permanently connected during communication.
+
+However, the End-to-end principle claims that transport control should be implemented end-to-end unless implementing hop-by-hop transport achieves considerably better performance. Moreover, hop-by-hop transport requires per-flow state information at intermediate nodes, which limits its scalability. This is one of the reasons why almost all communication today is controlled by end-to-end transport protocols such as TCP.
+
+Current research in the area of sparse mobile networks is considering hop-by-hop transport for application scenarios where end-to-end connectivity is only available intermittently, as under such conditions, hop-by-hop transport can achieve substantial performance gains.
